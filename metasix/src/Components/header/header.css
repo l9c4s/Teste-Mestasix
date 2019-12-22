@@ -1,0 +1,36 @@
+    .header{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        background-color:#0168B4;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 200px;
+        height: auto;
+        margin-left: 40px;
+    }
+
+    .header__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 60px
+    }
+    .header__icon{
+        display: flex;
+        flex-direction:column;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        padding: 0px 12px;
+    }
+    .header__icon i{
+        padding: 0px 0 2px 20px;
+        font-size: 35px;
+    }

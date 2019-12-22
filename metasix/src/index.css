@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and(max-width: 480px){
+
+}
+@media screen and(min-width: 481px) and (max-width:768px){
+
+}
+@media screen and(min-width: 769px) and (max-width:1199px){
+
+}
+@media screen and(min-width: 1200px){
+    
+}
