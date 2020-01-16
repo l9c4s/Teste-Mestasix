@@ -28,6 +28,15 @@ class Lista extends Component {
             return 1;
         }
     }
+    delete(id){
+        let rest = this.setState.questions
+            rest.forEach((question,index) => {
+            if(question.objectId === id){
+                rest.splice(index,1);
+                this.setState({question:rest})
+            }
+            });
+    }
     render() {
         const { questions } = this.state    
         return (
@@ -49,7 +58,7 @@ class Lista extends Component {
                                 <div className='lista__cont'>
                                     <span className='lista__action'>{question.position + 1} </span>
                                     <button className='lista__edit'><i className="fa fa-edit"></i></button>
-                                    <button type='button' className='lista__trash'><i className="fa fa-trash" ></i> </button>
+                                    <button type='button' className='lista__trash'onClick={() => this.delete(question.objectId)}><i className="fa fa-trash" ></i> </button>
                                 </div>
                             </div>
                         )
